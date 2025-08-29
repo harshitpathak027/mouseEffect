@@ -79,7 +79,7 @@ function connect() {
       let dy = particles[i].y - particles[j].y;
       let dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < 120) {
-        ctx.strokeStyle = "rgba(0,0,230," + (1 - dist / 120) + ")";
+        ctx.strokeStyle = "rgba(255,255,255," + (1 - dist / 120) + ")";
         ctx.lineWidth = 0.5;
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
